@@ -3,6 +3,7 @@
 Built with React using key features:
 
 - HOOKS! : useState, useRef
+- Routes & Switches
 - Chart.js intergration
 
 ## Built to Visualize Incomes and Expenses.
