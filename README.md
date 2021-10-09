@@ -10,7 +10,7 @@ Built with React using key features:
 
 I created this project to learn more about React and the "Reactive mindset" that you need when working with React.
 
-##Challenges
+## Challenges
 
 - Re-render loops : One of the greatest thing this project taught me was how to manage my re-renders and remove myself from vanilla Javascript thinking and think in a more reactive way. For this, I took extensive time learning the benefits of useRef. 
 - Chart.js with custom dataset : In hindset, I should have looked at the documentation for how the chart is built. Instead I built all my datasets first, then implemented the chart. However, with some Javascript magic, I was able to reconfigure my dataset to match the chart's request.
