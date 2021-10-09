@@ -1,0 +1,342 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+Link,
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Exo', sans-serif;
+}
+
+p {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+  background-color: #23262e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #faf9f9;
+  height: 80vh;
+  position: relative;
+}
+
+// Start-Wrapper
+.start-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //   Header Wrapper
+  .header-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: #555b6e 3px solid;
+    .header-logo {
+      width: 50%;
+    }
+    .logo-header {
+      font-size: 3em;
+      text-align: center;
+    }
+  }
+  //   Start BTN Wrapper
+  .start-btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-size: 1.25em;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .start-btn {
+      border: none;
+      padding: 0.5rem;
+      width: 200px;
+      border-radius: 25px;
+      background-color: #6ec47b;
+      color: #23262e;
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-align: center;
+      &:hover {
+        cursor: pointer;
+        background-color: #3b9148;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+// Budget Page
+.brand-title {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-bottom: #555b6e 2px solid;
+}
+// Apply at final screen
+.green-title {
+  color: #6ec47b;
+}
+.question-header {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.addNewBTN {
+  //   padding: 0.75rem;
+  width: 100px;
+  border: none;
+  font-size: 2em;
+  font-weight: bold;
+  color: #23262e;
+  background-color: #6ec47b;
+  border-radius: 25px;
+  margin-top: 20px;
+  margin-left: 20px;
+  @media screen and (max-width: 350px) {
+    width: 100px;
+    font-size: 1.4em;
+  }
+  &::selection {
+    user-select: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.done-btn {
+  //   padding: 0.75rem;
+  width: 150px;
+  border: none;
+  font-size: 2em;
+  font-weight: bold;
+  color: #faf9f9;
+  background-color: #555b6e;
+  border-radius: 25px;
+  margin-top: 20px;
+  margin-left: 20px;
+  @media screen and (max-width: 350px) {
+    width: 120px;
+    font-size: 1.4em;
+  }
+  &::selection {
+    user-select: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.done-btn-link {
+  //   padding: 0.75rem;
+  width: 150px;
+  border: none;
+  font-size: 1.75em;
+  padding: 0.25rem;
+  font-weight: bold;
+  color: #faf9f9;
+  background-color: #555b6e;
+  border-radius: 25px;
+  margin-top: 20px;
+  margin-left: 20px;
+  @media screen and (max-width: 350px) {
+    width: 100px;
+    font-size: 1.2em;
+    padding: 5px;
+  }
+  &::selection {
+    user-select: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.start-over-btn {
+  //   padding: 0.75rem;
+  width: 75%;
+  text-align: center;
+  border: none;
+  font-size: 1.75em;
+  padding: 0.25rem;
+  font-weight: bold;
+  color: #faf9f9;
+  background-color: #555b6e;
+  border-radius: 25px;
+  margin-top: 20px;
+  margin-left: 20px;
+  &::selection {
+    user-select: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.remove-btn {
+  width: 100px;
+  border: none;
+  font-size: 2em;
+  font-weight: bold;
+  color: #faf9f9;
+  background-color: #db5461;
+  border-radius: 25px;
+  &::selection {
+    user-select: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.budget-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 560px) {
+    position: relative;
+    top: 100px;
+  }
+  .textField,
+  .incomeField,
+  .expenseField {
+    padding: 0.5rem;
+    border: #23262e 1px solid;
+    margin: 10px;
+    width: 240px;
+  }
+  .textField {
+    background-color: #555b6e;
+    color: #faf9f9;
+    font-size: 1rem;
+    &:focus {
+      outline: none;
+      border: #6ec47b 1px solid;
+    }
+    &::placeholder {
+      color: #faf9f9;
+    }
+  }
+  .incomeField {
+    background-color: #6ec47b;
+    color: #23262e;
+    font-weight: bold;
+    font-size: 1rem;
+    &:focus {
+      outline: none;
+      border: #6ec47b 1px solid;
+    }
+    &::placeholder {
+      color: #23262e;
+      font-weight: bold;
+      //   font-size: 1rem;
+    }
+  }
+  .expenseField {
+    background-color: #db5461;
+    color: #23262e;
+    font-weight: bold;
+    font-size: 1rem;
+    &:focus {
+      outline: none;
+      border: #e45e6b 1px solid;
+    }
+    &::placeholder {
+      color: #23262e;
+      font-weight: bold;
+      //   font-size: 1rem;
+    }
+  }
+}
+
+.field-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  @media screen and (max-width: 560px) {
+    flex-direction: column;
+  }
+}
+.income-list-item-wrapper {
+  margin-top: 40px;
+  background-color: #6ec47b;
+  width: 100%;
+  .list-item {
+    background-color: #6ec47b;
+    color: #23262e;
+    width: 100%;
+    border-radius: 25px;
+    padding: 5px 0;
+    text-align: center;
+  }
+}
+.expense-list-item-wrapper {
+  margin-top: 40px;
+  background-color: #db5461;
+  width: 100%;
+  .list-item {
+    background-color: #db5461;
+    color: #faf9f9;
+    width: 100%;
+    border-radius: 25px;
+    padding: 5px 0;
+    text-align: center;
+  }
+}
+
+.chart-wrapper {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 900px;
+
+  @media screen and (max-width: 520px) {
+    width: 90vw;
+    height: 500px;
+  }
+  @media screen and (max-width: 930px) {
+    width: 90vw;
+    margin-top: 5rem;
+  }
+  h2 {
+    margin-bottom: 20px;
+    font-size: 1.75rem;
+    @media screen and (max-width: 520px) {
+      font-size: 1.25rem;
+      margin-top: 20px;
+    }
+  }
+  .negative {
+    font-size: 2rem;
+    color: #db5461;
+    font-weight: bold;
+  }
+  .positive {
+    font-size: 2rem;
+    color: #6ec47b;
+    font-weight: bold;
+  }
+  .chart-sum-neg,
+  .chart-sum-pos {
+    text-align: center;
+  }
+}
