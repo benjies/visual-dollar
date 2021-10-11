@@ -26,6 +26,7 @@ export default function ChartComponent({ expenseData, incomeData }) {
     <Fragment>
       <div className='chart-wrapper'>
         <h2>Here's Your Breakdown</h2>
+        {/* Income and Expense Chart */}
         <Bar
           ref={chartRef}
           type='bar'
@@ -41,6 +42,25 @@ export default function ChartComponent({ expenseData, incomeData }) {
               },
             ],
             borderWidth: 1,
+          }}
+          options={{
+            plugins: {
+              legend: {
+                labels: {
+                  color: '#faf9f9',
+                },
+              },
+            },
+            scales: {
+              y: {
+                ticks: {
+                  color: '#faf9f9',
+                },
+              },
+              x: {
+                ticks: '#faf9f9',
+              },
+            },
           }}
           // redraw='true'
           width='500px'
@@ -62,9 +82,29 @@ export default function ChartComponent({ expenseData, incomeData }) {
             ],
             borderWidth: 1,
           }}
+          options={{
+            plugins: {
+              legend: {
+                labels: {
+                  color: '#faf9f9',
+                },
+              },
+            },
+            scales: {
+              y: {
+                ticks: {
+                  color: '#faf9f9',
+                },
+              },
+              x: {
+                ticks: '#faf9f9',
+              },
+            },
+          }}
           // redraw='true'
           width='500px'
         />
+        {/* Calculate the Cash Flow */}
         {summedIncome < 0 ? (
           <p className='chart-sum-neg'>
             You are <span className='negative'>${summedIncome}</span>. Time to

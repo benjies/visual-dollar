@@ -74,7 +74,7 @@ export default function BudgetPage() {
             nextSection={nextSection}
           />
         )}
-
+        {/* Display Buttons */}
         {isReady && (
           <ButtonComponent
             incomeValueRef={incomeValueRef}
