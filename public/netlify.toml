@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/visualized-data*"
+to = "/"
+status = 200
