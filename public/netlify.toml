@@ -1,8 +1,8 @@
 [[redirects]]
 from = "/visualized-data*"
-to = "/*"
+to = "/start"
 status = 200
 
 from = "/enter-your-income-and-expenses*"
-to = "/*"
+to = "/start"
 status = 200

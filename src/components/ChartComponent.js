@@ -77,7 +77,7 @@ export default function ChartComponent({ expenseData, incomeData }) {
           </p>
         )}
 
-        <Link to='/' className='start-over-btn'>
+        <Link to='/start' className='start-over-btn'>
           Start Over
         </Link>
       </div>
