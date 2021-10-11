@@ -1,9 +1,14 @@
 [[redirects]]
 from = "/visualized-data*"
-to = "/start"
+to = "/"
+status = 200
+
+[[redirects]]
+from = "/start*"
+to = "/"
 status = 200
 
 [[redirects]]
 from = "/enter-your-income-and-expenses*"
-to = "/start"
+to = "/"
 status = 200
