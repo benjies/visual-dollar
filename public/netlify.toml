@@ -2,3 +2,7 @@
 from = "/visualized-data*"
 to = "/"
 status = 200
+
+from = "/enter-your-income-and-expenses*"
+to = "/"
+status = 200
