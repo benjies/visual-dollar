@@ -3,6 +3,7 @@ from = "/visualized-data*"
 to = "/start"
 status = 200
 
+[[redirects]]
 from = "/enter-your-income-and-expenses*"
 to = "/start"
 status = 200
