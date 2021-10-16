@@ -32,7 +32,7 @@ export default function ChartComponent({ expenseData, incomeData }) {
     })
   );
   const maxIncomeObject = incomeData.find((income) => {
-    return income.Value == maxIncomeSearch;
+    return income.Value.toString() === maxIncomeSearch.toString();
   });
   // Find Max Value in ExpenseData
   const maxExpenseSearch = Math.min.apply(
@@ -42,7 +42,7 @@ export default function ChartComponent({ expenseData, incomeData }) {
     })
   );
   const maxExpenseObject = expenseData.find((expense) => {
-    return expense.Value == maxExpenseSearch;
+    return expense.Value.toString() === maxExpenseSearch.toString();
   });
 
   return (
