@@ -1,21 +1,28 @@
 import React, { Fragment, useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import ButtonComponent from './ButtonComponent';
 import ChartComponent from './ChartComponent';
 import ExpenseComponent from './ExpenseComponent';
 import IncomeComponent from './IncomeComponent';
 
 export default function BudgetPage() {
+  // Boolean States
   const [isReady, setIsReady] = useState(false);
   const [nextSection, setNextSection] = useState(false);
   const [loadChart, setLoadChart] = useState(false);
+
+  // Data States
   const [incomeData, setIncomeData] = useState([]);
   const [expenseData, setExpenseData] = useState([]);
+
   //   Ref for the input fields
   const incomeLabelRef = useRef();
   const incomeValueRef = useRef();
 
-  // { label: '', value: 0, index: 0 }
-  //   new list item for income
+  // Object Structure
+  // { Label: string, Value: number }
+
+  //  Create a new Income Item
   const newIncomeItem = () => {
     let newIncome = {
       Label: incomeLabelRef.current.value,
@@ -32,6 +39,7 @@ export default function BudgetPage() {
       incomeValueRef.current.value = '';
     }
   };
+  // Create a new Expense item
   const newExpenseItem = () => {
     let newExpense = {
       Label: incomeLabelRef.current.value,
@@ -49,9 +57,30 @@ export default function BudgetPage() {
     }
   };
 
+  // Remove Item from Income List
+  const removeIncomeItem = (e) => {
+    const value = e.target.getAttribute('value');
+    const label = e.target.getAttribute('label');
+
+    setIncomeData(
+      incomeData.filter((item) => item.Value !== value && item.Label !== label)
+    );
+  };
+  // Remove Item from Expense List
+  const removeExpenseItem = (e) => {
+    const value = e.target.getAttribute('value');
+    const label = e.target.getAttribute('label');
+
+    setExpenseData(
+      expenseData.filter((item) => item.Value !== value && item.Label !== label)
+    );
+  };
+
   return (
     <Fragment>
-      <h2 className='brand-title'>Visual Dollar</h2>
+      <Link to='/start'>
+        <h2 className='brand-title'>Visual Dollar</h2>
+      </Link>
       <div className='budget-input-wrapper'>
         {/* Income Part */}
         {!nextSection && !loadChart && (
@@ -95,9 +124,23 @@ export default function BudgetPage() {
           <div className='income-list-item-wrapper'>
             {incomeData.map((data) => {
               return (
-                <p className='list-item' key={data.Value + data.Label}>
-                  {data.Label} : ${data.Value}
-                </p>
+                <div
+                  className='list-item-control'
+                  key={data.Value + data.Label + '-control'}
+                >
+                  <p className='list-item' key={data.Value + data.Label}>
+                    {data.Label} : ${data.Value}
+                  </p>
+                  <button
+                    className='remove-item'
+                    key={data.Value + data.Label + '-remove'}
+                    label={data.Label}
+                    value={data.Value}
+                    onClick={removeIncomeItem}
+                  >
+                    X
+                  </button>
+                </div>
               );
             })}
           </div>
@@ -107,9 +150,23 @@ export default function BudgetPage() {
           <div className='expense-list-item-wrapper'>
             {expenseData.map((data) => {
               return (
-                <p className='list-item' key={data.Value + data.Label}>
-                  {data.Label} : ${data.Value}
-                </p>
+                <div
+                  className='list-item-control'
+                  key={data.Value + data.Label + '-control'}
+                >
+                  <p className='list-item' key={data.Value + data.Label}>
+                    {data.Label} : ${data.Value}
+                  </p>
+                  <button
+                    className='remove-item'
+                    key={data.Value + data.Label + '-remove'}
+                    label={data.Label}
+                    value={data.Value}
+                    onClick={removeExpenseItem}
+                  >
+                    X
+                  </button>
+                </div>
               );
             })}
           </div>

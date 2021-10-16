@@ -98,7 +98,9 @@ body {
   .addNewBTN::selection {
     user-select: none; }
   .addNewBTN:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: #3b9148;
+    transition: 0.2s; }
 
 .done-btn {
   width: 150px;
@@ -117,7 +119,9 @@ body {
   .done-btn::selection {
     user-select: none; }
   .done-btn:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: #6c748d;
+    transition: 0.2s; }
 
 .done-btn-link {
   width: 150px;
@@ -138,7 +142,9 @@ body {
   .done-btn-link::selection {
     user-select: none; }
   .done-btn-link:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: #6c748d;
+    transition: 0.2s; }
 
 .start-over-btn {
   width: 75%;
@@ -155,7 +161,9 @@ body {
   .start-over-btn::selection {
     user-select: none; }
   .start-over-btn:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: #6c748d;
+    transition: 0.2s; }
 
 .remove-btn {
   width: 100px;
@@ -251,6 +259,27 @@ body {
     padding: 5px 0;
     text-align: center; }
 
+.list-item {
+  font-size: 1.2rem; }
+
+.list-item-control {
+  position: relative; }
+  .list-item-control .remove-item {
+    position: absolute;
+    height: 100%;
+    width: 75px;
+    background-color: #db5461;
+    top: 0%;
+    right: 2%;
+    border: none;
+    outline: none;
+    color: #faf9f9;
+    font-size: 1.5rem;
+    font-weight: bold; }
+    .list-item-control .remove-item:hover {
+      cursor: pointer;
+      background-color: #e45e6b; }
+
 .chart-wrapper {
   margin-top: 8rem;
   display: flex;
@@ -284,3 +313,9 @@ body {
   .chart-wrapper .chart-sum-neg,
   .chart-wrapper .chart-sum-pos {
     text-align: center; }
+
+.margin-20 {
+  margin: 20px 0; }
+
+.display-max-min {
+  text-align: center; }
