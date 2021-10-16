@@ -63,7 +63,9 @@ export default function BudgetPage() {
     const label = e.target.getAttribute('label');
 
     setIncomeData(
-      incomeData.filter((item) => item.Value !== value && item.Label !== label)
+      incomeData.filter((item) =>
+        item.Value !== value ? true : item.Label !== label
+      )
     );
   };
   // Remove Item from Expense List
@@ -72,7 +74,9 @@ export default function BudgetPage() {
     const label = e.target.getAttribute('label');
 
     setExpenseData(
-      expenseData.filter((item) => item.Value !== value && item.Label !== label)
+      expenseData.filter((item) =>
+        item.Value !== parseInt(value) ? true : item.Label !== label
+      )
     );
   };
 
