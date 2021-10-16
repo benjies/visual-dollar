@@ -1,4 +1,5 @@
 # Visual Dollar : Visualize Your Budget
+![Imgur](https://i.imgur.com/W32qJUl.gif)
 
 Built with React using key features:
 
