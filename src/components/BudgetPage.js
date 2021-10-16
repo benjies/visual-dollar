@@ -132,7 +132,7 @@ export default function BudgetPage() {
                     {data.Label} : ${data.Value}
                   </p>
                   <button
-                    className='remove-item'
+                    className='remove-item-income'
                     key={data.Value + data.Label + '-remove'}
                     label={data.Label}
                     value={data.Value}

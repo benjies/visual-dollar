@@ -279,6 +279,21 @@ body {
     .list-item-control .remove-item:hover {
       cursor: pointer;
       background-color: #e45e6b; }
+  .list-item-control .remove-item-income {
+    position: absolute;
+    height: 100%;
+    width: 75px;
+    background-color: #6ec47b;
+    top: 0%;
+    right: 2%;
+    border: none;
+    outline: none;
+    color: #23262e;
+    font-size: 1.5rem;
+    font-weight: bold; }
+    .list-item-control .remove-item-income:hover {
+      cursor: pointer;
+      background-color: #7cd389; }
 
 .chart-wrapper {
   margin-top: 8rem;
