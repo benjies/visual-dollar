@@ -19,6 +19,7 @@ I created this project to learn more about React and the "Reactive mindset" that
 
 ## Planned Updates
 
-- Update UI to deliver a flawless experience across all resolutions and fix certain margin/padding issues
+- Update UI to deliver a flawless experience across all resolutions
+- Provide a more in-depth conclusion page for meaningful data anaylsis
 
 View a live demo [here](https://www.visualdollar.com/) hosted with Netlify.
