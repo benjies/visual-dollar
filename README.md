@@ -9,7 +9,7 @@ Built with React using key features:
 
 ## Built to Visualize Incomes and Expenses.
 
-I created this project to learn more about React and the "Reactive mindset" that you need when working with React.
+I created this project to learn more about React and the "reactive mindset" that you need when working with React.
 
 ## Challenges
 
