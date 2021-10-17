@@ -244,8 +244,7 @@ body {
     color: #23262e;
     width: 100%;
     border-radius: 25px;
-    padding: 5px 0;
-    text-align: center; }
+    padding: 5px 0; }
 
 .expense-list-item-wrapper {
   margin-top: 40px;
@@ -256,11 +255,7 @@ body {
     color: #faf9f9;
     width: 100%;
     border-radius: 25px;
-    padding: 5px 0;
-    text-align: center; }
-
-.list-item {
-  font-size: 1.2rem; }
+    padding: 5px 0; }
 
 .list-item-control {
   position: relative; }
@@ -294,6 +289,17 @@ body {
     .list-item-control .remove-item-income:hover {
       cursor: pointer;
       background-color: #7cd389; }
+  .list-item-control .list-item {
+    font-size: 1.2rem;
+    text-align: center; }
+    @media screen and (max-width: 600px) {
+      .list-item-control .list-item {
+        font-size: 1rem;
+        text-align: start;
+        text-indent: 3rem; } }
+    @media screen and (max-width: 330px) {
+      .list-item-control .list-item {
+        text-indent: 0.5rem; } }
 
 .chart-wrapper {
   margin-top: 8rem;
