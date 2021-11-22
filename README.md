@@ -6,10 +6,11 @@ Built with React using key features:
 - HOOKS! : useState, useRef
 - Routes & Switches
 - Chart.js intergration
+- Array manipulation 
 
 ## Built to Visualize Incomes and Expenses.
 
-I created this project to learn more about React and the "Reactive mindset" that you need when working with React.
+I created this project to learn more about React and the "reactive mindset" that you need when working with React.
 
 ## Challenges
 
@@ -19,6 +20,7 @@ I created this project to learn more about React and the "Reactive mindset" that
 
 ## Planned Updates
 
-- Update UI to deliver a flawless experience across all resolutions and fix certain margin/padding issues
+- Update UI to deliver a flawless experience across all resolutions
+- Provide a more in-depth conclusion page for meaningful data anaylsis
 
 View a live demo [here](https://www.visualdollar.com/) hosted with Netlify.
