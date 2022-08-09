@@ -81,8 +81,11 @@ body {
   margin-left: 20px;
   margin-bottom: 20px; }
 
+.btn-wrapper {
+  width: 100%; }
+
 .addNewBTN {
-  width: 100px;
+  width: 90%;
   border: none;
   font-size: 2em;
   font-weight: bold;
@@ -103,7 +106,7 @@ body {
     transition: 0.2s; }
 
 .done-btn {
-  width: 150px;
+  width: 90%;
   border: none;
   font-size: 2em;
   font-weight: bold;
@@ -124,7 +127,7 @@ body {
     transition: 0.2s; }
 
 .done-btn-link {
-  width: 150px;
+  width: 90%;
   border: none;
   font-size: 1.75em;
   padding: 0.25rem;
@@ -133,7 +136,9 @@ body {
   background-color: #555b6e;
   border-radius: 25px;
   margin-top: 20px;
-  margin-left: 20px; }
+  margin-left: 20px;
+  display: block;
+  text-align: center; }
   @media screen and (max-width: 350px) {
     .done-btn-link {
       width: 100px;
